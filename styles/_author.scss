@@ -1,0 +1,105 @@
+.author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    // width: 100%;
+    &::before{
+        content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:85%;
+            height: 100%;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 19px 27px 0 rgba(0,0,0,.17);
+            background: url(../image/author/border-image.png) bottom right/cover no-repeat #f6f6f6;
+    }
+    .container{
+        position: relative;
+    }
+    &__title-section{
+        position: absolute;
+        top: -60px;
+        right: 0;
+        
+    }
+    &__content{
+        display: flex;
+        width:100%;
+        // align-items: center; 
+    }
+    &__img{
+        max-width:415px;
+        // display: flex;
+        // justify-content: center;
+        img{
+            max-width: 100%;
+            box-sizing: content-box;
+            height: auto;
+        }
+    }
+    &__text{
+        max-width: 615px;
+        padding-left: 35px;
+        h3{
+            font-size: 32px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            margin-bottom: 45px;
+            text-align: right;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 500;
+            &:not(:last-child){
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1550px){
+    .author{
+        &::before{
+            width:90%;
+        }
+    }
+}
+
+@media screen and (max-width:1350px){
+    .author{
+        &::before{
+            width:95%;
+        }
+    }
+}
+
+@media screen and (max-width:1190px){
+    .author{
+        background: #f6f6f6;
+        &__content{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img{
+            margin-bottom: 50px;
+        }
+        &__text{
+            // max-width: 70%;
+            h3{
+                text-align: center;
+            }
+            text-align: center;
+        }
+        &::before{
+            display: none;
+        }
+    }
+}
