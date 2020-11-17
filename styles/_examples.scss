@@ -1,0 +1,26 @@
+.examples{
+    padding-top:120px;
+    padding-bottom: 100px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    &__title-section{
+        position: absolute;
+
+        top: -60px;
+        left: 120px;
+   }
+   &__title{
+       width: 100%;
+        text-align: left;
+        padding-left: 120px;
+        padding-bottom: 70px;
+        font-size: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: .15em;
+   }
+}
