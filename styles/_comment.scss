@@ -1,0 +1,50 @@
+.comment{
+    padding:140px 0px 50px;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        top:22%;
+        z-index:-1;
+        left:15%;
+        background: url('../image/comment/dots.png') no-repeat center center;
+        width:264px;
+        height: 269px;
+        border-radius: 100px;
+    }
+    &__title-section{
+        position: absolute;
+        top: -60px;
+        right: 0;
+    }
+    .container{
+        position: relative;
+    }
+    &__items{
+        max-width:90%;
+        margin: 0   auto;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        img{
+            margin-right: 30px;
+        }
+        h4{
+            font-size: 18px;
+            margin-bottom: 5    px;
+        }
+        b{
+            font-size: 14px;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+    &__item--second{
+        padding-left:100px;
+    }
+}
